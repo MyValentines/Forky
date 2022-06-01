@@ -6,25 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>MyValentines</title>
-  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="icon" type="image/png" href="/fav.png" />
   <style>
+    body{background:cornflowerblue;color:white;}
     img{vertical-align:middle;}
-    body{background:black;color:white;}
+    
+    .panel{background:azure;color:black;padding:2em;margin:2em 20%;text-align:center;border-radius:.5em;}
+    .grid{margin:1em 0;display:flex;align-items:center;justify-content:center;width:100%;}
+    .grid *{flex:1;}
   </style>
 </head>
 <body>
   <main>
-    <div style="background:white;color:black;padding:2em;margin:2em 20%;text-align:center;border-radius:.5em;">
-      Hi there, you're probably looking for:
-      <br/>
-      <a href="https://earlyvalentines.vercel.app/">EarlyValentines <img src="early.png" width="40em" title="EarlyValentines" alt="EarlyValentines" /></a>
-      <br/>
-      or
-      <br/>
-      <a href="https://enamored-valentines.vercel.app/">EnamoredValentines <img src="enamored.png" width="40em" title="EnamoredValentines" alt="EnamoredValentines" /></a>
+    <div class="panel">
+      <div class="grid">
+        <span>
+          <a href="https://earlyvalentines.vercel.app/">
+            <img src="early.png" width="100%" />
+            <br/>
+            <strong>Early
+            Valentines</strong>
+          </a>
+        </span>
+        <span style="flex-grow:0.1;flex-shrink:1;">
+        &nbsp;
+        </span>
+        <span">
+          <a href="https://enamored-valentines.vercel.app/">
+            <img src="enamored.png" width="100%" />
+            <br/>
+            <strong>Enamored
+            Valentines</strong>
+          </a>
+        </span>
+      </div>
     </div>
 
-    <div style="background:white;color:black;padding:2em;margin:2em 20%;text-align:center;border-radius:.5em;">
+    <div class="panel">
       Copyright © 2022 <a href="#">MyValentines</a>. All rights Reserved.
     </div>
   </main>
