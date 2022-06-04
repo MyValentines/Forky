@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>MyValentines</title>
-  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+
   <style>
     body{background:cornflowerblue;color:white;}
-    img{vertical-align:middle;}
+    img{vertical-align:middle;border-radius:.5em;}
     
-    .panel{background:azure;color:black;padding:2em;margin:2em 20%;text-align:center;border-radius:.5em;}
+    .panel{background:azure;color:black;padding:1em;margin:2em 20%;text-align:center;border-radius:.5em;}
+    .tight{margin:2em 20%;}
+    .alert{background:#aa2222;color:white;padding:4em;}
+    .panel h3{margin-top:0;}
+    
     .grid{margin:1em 0;display:flex;align-items:center;justify-content:center;width:100%;}
     .grid *{flex:1;}
   </style>
@@ -19,6 +24,7 @@
 <body>
   <main>
     <div class="panel">
+      <h3>Collections</h3>
       <div class="grid">
         <span>
           <a href="https://earlyvalentines.vercel.app/">
@@ -28,6 +34,7 @@
             Valentines</strong>
           </a>
         </span>
+        <!--
         <span style="flex-grow:0.1;flex-shrink:1;">
         &nbsp;
         </span>
@@ -39,11 +46,42 @@
             Valentines</strong>
           </a>
         </span>
+        -->
+      </div>
+    </div>
+    
+    <div class="panel">
+      <h3>Team</h3>
+      <div class="grid">
+        <span>
+          <img src="fizzuki.png" width="50%" />
+          <br/>
+          <strong>Fizzuki</strong>
+          <br/>
+          <div class="grid">
+            <span>
+              <a href="https://twitter.com/fuzz_iki"><img src="twitter.svg" title="Twitter" alt="Twitter" width="10%" /></a>
+              <a href="https://discord.com/channels/@Fizzuki#9327"><img src="discord.svg" title="Discord" alt="Discord" width="10%" /></a>
+              <a href="https://opensea.io/fizzuki"><img src="opensea.svg" title="OpenSea" alt="OpenSea" width="10%" /></a>
+            </span>
+          </div>
+        </span>
+        <span>
+          <img src="hyperagon.gif" width="50%" />
+          <br/>
+          <strong>Hyperagon.zil</strong>
+          <br/>
+          <div class="grid">
+            <span>
+              <a href="https://hyperagon.itch.io/" title="itch.io" alt="itch.io" /><img src="itch.svg" width="10%" /></a>
+            </span>
+          </div>
+        </span>
       </div>
     </div>
 
-    <div class="panel">
-      Copyright © 2022 <a href="#">MyValentines</a>. All rights Reserved.
+    <div class="tight panel">
+      Copyright © 2022 <a href="https://myvalentines-theta.vercel.app">MyValentines</a>. All rights Reserved.
     </div>
   </main>
 </body>
