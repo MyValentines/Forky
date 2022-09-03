@@ -6,21 +6,21 @@
   <style>
 body{background:cornflowerblue;color:white;}
 
-.panel{background:azure;color:black;padding:1em;margin:2em 20%;text-align:center;border-radius:.5em;}
+.panel{background:azure;color:black;padding:1em;margin:2em 10%;text-align:center;border-radius:.5em;}
 .tight{margin:2em 20%;}
 .alert{background:#aa2222;color:white;padding:4em;}
+.panel h1{margin:0;}
 .panel h3{margin-top:0;color:cornflowerblue;}
 
-.grid{margin:1em 0;display:flex;align-items:center;justify-content:center;width:100%;}
-.grid *{flex:1;}
-
-.grid{display:flex;justify-content: center;flex-wrap:wrap;}
 h1{text-align:center;margin-bottom:0;color:darkblue;}
 h2{text-align:center;font-weight:normal;font-size:.8em;margin-top:0;}
 h3{margin:auto;}
+
+.grid{margin-bottom:1em;display:flex;align-items:center;justify-content:center;width:100%;flex-wrap:wrap;}
+.grid *{flex-shrink:1;}
 /* https://codepen.io/tylersticka/pen/XWrgxjw */
 .grid a:hover *{filter: brightness(1.2);flex:1;}
-.grid a img{display:inline-block;max-width:10em;border-radius:1em;border:2px solid royalblue;}
+.grid a img{display:inline-block;max-width:10em;max-height:10em;border-radius:1em;border:2px solid royalblue;}
 .grid a{
   background: transparent;
   /*border: 0;
@@ -40,8 +40,8 @@ h3{margin:auto;}
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 1vw;
-  bottom: 1vh;
+  right: 1em;
+  bottom: 1em;
   background: midnightblue;
   color: white;
   border: 2px solid royalblue;
@@ -55,10 +55,67 @@ h3{margin:auto;}
 </head>
 <body>
   <h1>Alpha's Token List</h1>
-  <h2>Updated on 2022-09-01</h2>
+  <h2>Updated on 2022-09-03</h2>
 
   <div class="panel">
-  <div class="grid">
+    <h1>Ethereum</h1>
+    <div class="grid">
+
+<a href="https://opensea.io/assets/matic/0xa5fadb06b40b06b1fdc7777ebe0eaa15656ae1e4/33725">
+  <h3>Recur Pass #33725</h3>
+  <img src="token/RecurPass_33725.png	" />
+  <span class="badge">3.3 POLYGON</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x731d6c6ef47e62ae0e61f51fe21ec5a513d75c68/22">
+  <h3>EarlyValentine #22</h3>
+  <img src="token/EarlyValentines_22.svg" />
+  <span class="badge">0.3 ETH</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x731d6c6ef47e62ae0e61f51fe21ec5a513d75c68/21">
+  <h3>EarlyValentine #21</h3>
+  <img src="token/EarlyValentines_21.svg" />
+  <span class="badge">0.2 ETH</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x731d6c6ef47e62ae0e61f51fe21ec5a513d75c68/20">
+  <h3>EarlyValentine #20</h3>
+  <img src="token/EarlyValentines_20.svg" />
+  <span class="badge">0.1 ETH</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x63d48ed3f50aba950c17e37ca03356ccd6b6a280/8321">
+  <h3>Cozy Penguin #8321</h3>
+  <img src="token/Cozy_Penguin_8321.png" />
+  <span class="badge">0.08 SOL</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x1e97011e7ee616e6fdc1b0d87e1e25c9d5335880/543">
+  <h3>Housewife Kitties #543</h3>
+  <img src="token/HousewifeKitties_543.png" />
+  <span class="badge">0.05 ETH</span>
+</a>
+
+<a href="https://opensea.io/assets/ethereum/0x1e97011e7ee616e6fdc1b0d87e1e25c9d5335880/542">
+  <h3>Housewife Kitties #542</h3>
+  <img src="token/HousewifeKitties_542.png" />
+  <span class="badge">0.05 ETH</span>
+</a>
+
+<!--
+<a href="">
+  <h3>?</h3>
+  <img src="" />
+  <span class="badge">? SOL</span>
+</a>
+-->
+    </div>
+  </div>
+
+  <div class="panel">  
+    <h1>Solana</h1>
+    <div class="grid">
 
 <a href="https://hyperspace.xyz/token/GyahnFGgNk6QQt6sfJLM25gEHkiQpCsHK8EAdJUFAswJ">
   <h3>SolSnatcher #5878</h3>
@@ -126,8 +183,6 @@ h3{margin:auto;}
   <span class="badge">0.05 SOL</span>
   </img>
 </a>
-<a href="">
-</a>
 
 <!--
 <a href="">
@@ -136,7 +191,7 @@ h3{margin:auto;}
   <span class="badge">? SOL</span>
 </a>
 -->
-  </div> 
+  </div>
   </div>
 
   <div class="tight panel">
