@@ -19,7 +19,6 @@ h3{margin:auto;}
 .grid{margin-bottom:1em;display:flex;align-items:center;justify-content:center;width:100%;flex-wrap:wrap;}
 .grid *{flex-shrink:1;align-self:center;}
 /* https://codepen.io/tylersticka/pen/XWrgxjw */
-.grid a:hover *{filter:brightness(1.2);}
 .grid a img{display:inline-block;max-width:10em;max-height:10em;border-radius:1em;border:2px solid royalblue;}
 .grid a{
   background: transparent;
@@ -51,11 +50,14 @@ h3{margin:auto;}
   min-height: 2em;
   padding:.5em 1em;
 }
+.grid a:hover *{filter:brightness(1.2);border-color:firebrick;}
+.grid a:hover h3{color:maroon;}
+.grid a:hover .badge{border-color:firebrick;background:maroon;font-size: 0.6em;}
   </style>
 </head>
 <body>
   <h1>Alpha's Token List</h1>
-  <h2>Updated on 2022-09-03</h2>
+  <h2>Updated on 2022-09-05</h2>
 
   <div class="panel">
     <h1>Ethereum</h1>
@@ -67,7 +69,7 @@ h3{margin:auto;}
   <span class="badge">10 ETH</span>
 </a>
 
-<a href="https://opensea.io/assets/matic/0xa5fadb06b40b06b1fdc7777ebe0eaa15656ae1e4/33725">
+<a href="https://opensea.io/assets/matic/0xa5fadb06b40b06b1fdc7777ebe0eaa15656ae1e4/33725" title="PETH = ETH on Polygon">
   <h3>Recur Pass #33725</h3>
   <img src="token/RecurPass_33725.png	" />
   <span class="badge">3.3 PETH</span>
